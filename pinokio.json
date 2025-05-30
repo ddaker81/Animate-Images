@@ -1,0 +1,12 @@
+{
+  "name": "thin-plate-spline-motion-model",
+  "version": "1.0.0",
+  "description": "Thin Plate Spline Motion Model for image animation",
+  "scripts": {
+    "install": "node install.js",
+    "start": "node run.js"
+  },
+  "dependencies": {
+    "@pinokio/core": "^0.0.1"
+  }
+}
