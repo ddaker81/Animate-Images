@@ -10,6 +10,18 @@ module.exports = async (kernel) => {
     }, {
       method: "shell.run",
       params: {
+        message: "python -m venv venv",
+        path: "./Thin-Plate-Spline-Motion-Model"
+      }
+    }, {
+      method: "shell.run",
+      params: {
+        message: process.platform === 'win32' ? "venv\\Scripts\\activate" : "source venv/bin/activate",
+        path: "./Thin-Plate-Spline-Motion-Model"
+      }
+    }, {
+      method: "shell.run",
+      params: {
         message: "pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118",
         path: "./Thin-Plate-Spline-Motion-Model"
       }
